@@ -40,7 +40,7 @@ Missing data (empty cells) can cause problems in analysis. Here's how different 
     * **What was done:** Any missing values (empty cells) in these columns were filled with the word 'Unknown'.
     * **Why:** This ensures that every show has an entry for director and cast, even if unknown, preventing errors in later analysis and allowing us to count "Unknown" entries if needed. Importantly, existing names were *not* changed.
 * **'country' column:**
-    * **What was done:** Missing values were filled with the most frequently occurring country in the dataset (the "mode").
+    * **What was done:** Any missing values (empty cells) in these columns were filled with the word 'Unknown'.
     * **Why:** For categorical data like 'country', filling with the most common value is a reasonable approach when missing entries are a small percentage.
 * **'date_added' column:**
     * **What was done:**
