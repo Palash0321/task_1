@@ -41,15 +41,12 @@ Missing data (empty cells) can cause problems in analysis. Here's how different 
     * **Why:** This ensures that every show has an entry for director and cast, even if unknown, preventing errors in later analysis and allowing us to count "Unknown" entries if needed. Importantly, existing names were *not* changed.
 * **'country' column:**
     * **What was done:** Any missing values (empty cells) in these columns were filled with the word 'Unknown'.
-    * **Why:** For categorical data like 'country', filling with the most common value is a reasonable approach when missing entries are a small percentage.
+    * **Why:** For categorical data like 'country', filling with the Unknown.
 * **'date_added' column:**
-    * **What was done:**
-        1.  The text in the `date_added` column was converted into a proper date format.
-        2.  Any dates that were unreadable or blank were turned into a special "Not a Time" (`NaT`) value.
-        3.  A *new* column called `date_added_str` was created, which converts these date objects back into a consistent text format (`DD-MM-YYYY`), and any `NaT` values in this new column were filled with 'Unknown Date'.
-    * **Why:** Converting to a proper date format is essential for any date-based analysis. Handling unreadable dates prevents errors, and creating a string version is useful for display or if you need a date as text.
+    * **What was done:** Any missing values (empty cells) in these columns were filled with the word 'Unknown'.
+    * **Why:** filling with the unknown.
 * **'rating' column:**
-    * **What was done:** Missing values were filled with the most frequently occurring rating (e.g., 'TV-MA', 'PG-13').
+    * **What was done:** Missing values were filled with the Unknown.
     * **Why:** Similar to 'country', this maintains completeness for a categorical column.
 * **'duration' column:**
     * **What was done:** Any missing values were filled with 'Unknown'.
