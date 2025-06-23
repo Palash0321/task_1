@@ -16,6 +16,7 @@ This project focuses on cleaning and preprocessing the "Netflix Movies and TV Sh
 
 * **Python:** The programming language used for scripting.
 * **Pandas Library:** A powerful Python library specifically designed for data manipulation and analysis, making data cleaning tasks efficient.
+* **VSCode**
 
 ## 4. Data Cleaning Process (Step-by-Step)
 
