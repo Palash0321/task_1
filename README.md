@@ -76,19 +76,13 @@ This step ensures text data is consistent in its spelling and capitalization.
 * **What was done:** The `release_year` column was explicitly converted to an integer (whole number) type.
 * **Why:** `release_year` represents a year and should be stored as a whole number for correct interpretation and potential numerical operations. This step ensures the data type is appropriate.
 
-### Step 7: Saving the Cleaned Data
-
-* **What was done:** The final, cleaned DataFrame was saved as a new CSV file named `netflix_titles_cleaned.csv`.
-* **Why:** This creates a permanent version of your cleaned data, which can then be easily used for further analysis, visualization, or machine learning tasks without needing to repeat the cleaning process.
 
 ## 5. How to Run This Project
 
 1.  **Prerequisites:** Make sure you have Python and the Pandas library installed.
-2.  **Files:** Place the `clean_netflix_data.py` (or `task-1.ipynb` if you prefer Jupyter Notebook) and `netflix_titles.csv` files in the same directory.
+2.  **Files:** Place the file `task-1.ipynb` if you prefer Jupyter Notebook) and `netflix_titles.csv` files in the same directory.
 3.  **Run:**
-    * **For Python script (`.py`):** Open your terminal or command prompt, navigate to the directory where you saved the files, and run: `python clean_netflix_data.py`
     * **For Jupyter Notebook (`.ipynb`):** Open the notebook in Jupyter (or VS Code with Jupyter extension) and run all the cells.
-4.  **Check Output:** A new file named `netflix_titles_cleaned.csv` will be created in the same directory. You can open this file in any spreadsheet software (like Excel) or a text editor to verify the cleaned data. The terminal output will also show summaries of the changes.
 
 ## 6. Conclusion
 
